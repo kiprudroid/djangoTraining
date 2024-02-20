@@ -1,0 +1,17 @@
+.heading{
+    line-height: 60px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+
+}
+.paragraph{
+    font-size: 30px;
+    font: optional;
+    font-style: italic;
+    font-weight: bold;
+}
+.img{
+    width: 200px;
+    float: right;
+}

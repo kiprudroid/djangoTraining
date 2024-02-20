@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.min.css'%}">
+    <style>
+        form{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body class="bg-light" >
+<div class="container">
+    <form action="" class="bg-light p-5">
+        <legend>Budget App</legend>
+
+        <div class="form-floating mt-3 mb-3" >
+            <input type="text" value="" id="fname" placeholder="First Name" class="form-control" required="required">
+            <label for="fname" class="form-label">First Name</label>
+            
+        </div>
+        <div class="form-floating mt-3 mb-3" >
+            <input type="text" value="" id="lname" placeholder="Last Name" class="form-control" required="required">
+            <label for="lname" class="form-label">Last Name</label>
+            
+        </div>
+        <div class="form-floating mt-3 mb-3" >
+            <input type="email" value="" id="fname" placeholder="Email Address" class="form-control" required="required">
+            <label for="email" class="form-label">Email</label>
+            
+        </div>
+        <div class="form-floating mt-3 mb-3" >
+            <input type="password" value="" id="pwd" placeholder="" class="form-control" required="required">
+            <label for="fname" class="form-label">Password</label>
+            
+        </div>
+        <div class="form-floating mt-3 mb-3 d-grid" >
+           <button class="btn btn-outline-dark">Submit</button>
+            
+        </div>
+    </form>
+</div>
+</body>
+</html>

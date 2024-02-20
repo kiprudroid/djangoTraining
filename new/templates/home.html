@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Blog</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    nav {
+        background-color: pink;
+        padding: 20px;
+        text-align: right;
+        border-bottom-left-radius: 20px;
+    }
+    nav a {
+        color: blue;
+        text-decoration: none;
+        padding: 10px;
+    }
+    main {
+        padding: 20px;
+    }
+    .card {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .card p {
+        margin-bottom: 10px;
+    }
+    footer {
+        background-color: pink;
+        padding: 20px;
+        text-align: center;
+        border-top-right-radius: 20px;
+    }
+    footer a {
+        color: blue;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#">About</a>
+    <img src="{% static 'images/2.jpeg'%}" alt="User Image" style="width: 100px; border-radius: 50%;">
+</nav>
+
+<main>
+    <div class="card">
+        <img src="{% static 'images/1.jpg'%}" alt="Car Image">
+        <p>Description about cars...</p>
+        <button>Like</button>
+        <button>Comment</button>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'images/3.jpg'%}" alt="Flower Image">
+        <p>Description about flowers...</p>
+        <button>Like</button>
+        <button>Comment</button>
+    </div>
+    
+    <!-- Add more cards as needed -->
+
+
+    <h1 class="heading">Payment</h1>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus architecto nesciunt autem perferendis, necessitatibus numquam explicabo qui maxime rerum ullam aut, itaque repellat. Iure beatae facere enim voluptatum eveniet nemo.</p>
+    <img src="{% static 'images/1.jpg'%}" alt="User Image"  class="img">
+
+</main>
+
+
+
+</body>
+</html>
